@@ -1,0 +1,37 @@
+.section-header {
+  margin: 0;
+  color: $primary;
+  max-width: gutter(155);
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: $primary;
+      position: absolute;
+      top: gutter(12.5);
+      left: 0;
+      width: gutter(11);
+      height: 1px;
+
+      @include media("<md") {
+        display: none;
+      }
+    }
+  }
+
+  &__desc {
+    margin: gutter(6) 0 0 gutter(15);
+    color: rgba($black-light, 0.8);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: gutter(12);
+
+    @include media("<md") {
+      margin: gutter(4) 0 0 0;
+      gap: gutter(1);
+      grid-template-columns: auto;
+    }
+  }
+}

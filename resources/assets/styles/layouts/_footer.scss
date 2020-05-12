@@ -1,0 +1,95 @@
+.footer {
+  background-color: $black-light;
+  color: rgba($white, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+
+  &__logo {
+    background-color: $white;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media("<lg") {
+      display: none;
+    }
+
+    img {
+      height: gutter(15);
+      width: auto;
+    }
+  }
+
+  &__content {
+    padding: gutter(8) gutter(10) gutter(5);
+    width: 75%;
+
+    @include media("<lg") {
+      width: 100%;
+    }
+
+    @include media("<md") {
+      padding: gutter(5) gutter(3);
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @include media("<md") {
+      text-align: center;
+      justify-content: center;
+    }
+
+    &--bottom {
+      align-items: center;
+      margin-top: gutter(5);
+
+      @include media("<lg") {
+        margin-top: gutter(3);
+      }
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+
+    @include media("<md") {
+      display: none;
+    }
+
+    li {
+      margin: gutter(0.25) 0;
+    }
+  }
+
+  &__title {
+    color: $primary;
+    margin-bottom: gutter(5);
+  }
+
+  &__link {
+    color: rgba($white, 0.8);
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__block {
+    margin-bottom: gutter(3);
+  }
+
+  &__copyright {
+    opacity: 0.3;
+
+    @include media("<lg") {
+      margin-bottom: gutter(3);
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.section-info {
+  margin: 0;
+  color: $primary;
+
+  &--center {
+    text-align: center;
+    margin: auto;
+  }
+
+  &__desc {
+    max-width: gutter(60);
+    margin: gutter(3) auto;
+    display: block;
+    color: rgba($black-light, 0.8);
+  }
+}

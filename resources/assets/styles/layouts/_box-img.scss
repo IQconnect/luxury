@@ -1,0 +1,43 @@
+.box-img {
+  color: $white;
+  margin-bottom: gutter(4);
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: gutter(65);
+
+    @include media("<md") {
+      height: gutter(50);
+    }
+  }
+
+  &__photo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding-left: gutter(15);
+
+    @include media("<lg") {
+      padding: 0;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    bottom: - gutter(8);
+    background-color: rgba($primary, 0.9);
+    width: gutter(60);
+    padding: gutter(6);
+
+    @include media("<lg") {
+      width: 100%;
+      background-color: $primary;
+      padding: gutter(3);
+    }
+  }
+
+  &__title {
+    margin-bottom: gutter(3);
+  }
+}

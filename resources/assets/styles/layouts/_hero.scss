@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  max-height: 85vh;
+  margin-top: 100px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: $white;
+  overflow: hidden;
+
+  @include media("<lg") {
+    margin-top: 100px;
+  }
+
+  &::after {
+    content: "";
+    background: black;
+    //opacity: 0.78;
+    opacity: 0.35;
+    //width: 102%;
+    //height: 200%;
+    display: block;
+    position: absolute;
+    //top: -100%;
+    //left: -50%;
+    z-index: 1;
+    //transform: rotate(22deg);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    @include media("<1500px") {
+      @include cssLock("width", 1000, 1500, (1250, 1500));
+    }
+
+    @include media("<lg") {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: rotate(0deg);
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  &__content {
+    position: relative;
+    max-width: gutter(60);
+    z-index: 2;
+
+    @include media("<lg") {
+      margin: auto;
+    }
+  }
+
+  &__header {
+    margin-top: 0;
+    position: relative;
+    display: block;
+  }
+
+  &__prefix {
+    font-weight: $light;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: $primary;
+    padding: gutter(1) 0;
+    display: block;
+
+    &::before {
+      content: "";
+      background-color: $primary;
+      width: gutter(2.7);
+      height: 1px;
+      display: inline-block;
+      margin: 0 gutter(1) gutter(0.8) 0;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    opacity: 0.85;
+    margin: gutter(4) 0;
+
+    @include media("<lg") {
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    @include media("<md") {
+      br {
+        display: none;
+      }
+    }
+  }
+}

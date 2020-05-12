@@ -1,0 +1,54 @@
+// fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap&subset=latin-ext");
+
+// @import library;
+@import "node_modules/include-media/dist/include-media.scss";
+@import "~flickity/css/flickity.css";
+@import "vendors/scss-lock/css-lock";
+
+//common
+@import "common/functions";
+@import "common/variables";
+@import "common/mixins";
+@import "common/helpers";
+@import "common/global";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+// components
+@import "components/typography";
+@import "components/buttons";
+@import "components/container";
+@import "components/hamburger";
+@import "components/link";
+@import "components/wp-classes";
+@import "components/hr";
+@import "components/section-info.scss";
+@import "components/section-header.scss";
+@import "components/flickity.scss";
+
+// layouts
+@import "layouts/preloader";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/slider";
+@import "layouts/banner";
+@import "layouts/hero";
+@import "layouts/small-hero";
+@import "layouts/section";
+@import "layouts/content-page";
+@import "layouts/content-single";
+@import "layouts/post-item";
+@import "layouts/gallery";
+@import "layouts/products";
+@import "layouts/contact";
+@import "layouts/menu";
+@import "layouts/offer";
+@import "layouts/boxes";
+@import "layouts/box-img";
+@import "layouts/store";
+@import "layouts/form";
+@import "layouts/apartments";
+

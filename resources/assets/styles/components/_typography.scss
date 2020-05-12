@@ -1,0 +1,86 @@
+%text {
+  margin: 0;
+  padding: 0;
+}
+
+.headline {
+  @include cssLock("font-size", 360, $container, (50, 90));
+
+  font-family: $font-title;
+  font-weight: $bold;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.title {
+  @include cssLock("font-size", 360, $container, (25, 45));
+
+  font-family: $font-title;
+  font-weight: $regular;
+  display: block;
+  position: relative;
+
+  @extend %text;
+
+  &--small {
+    @include cssLock("font-size", 360, $container, (22, 30));
+
+    margin-bottom: gutter(1);
+
+    &::after {
+      content: "";
+      background-color: $primary;
+      width: gutter(5);
+      height: 1px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: calc(100% + 15px);
+
+      @include media("<md") {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.pretitle {
+  @include cssLock("font-size", 360, $container, (17, 20));
+
+  font-family: $font-title;
+  color: $secondary-light;
+  font-weight: $medium;
+  text-transform: uppercase;
+
+  @extend %text;
+}
+
+.text {
+  @include cssLock("font-size", 360, $container, (14, 16));
+
+  font-family: $font-main;
+  font-weight: $regular;
+  letter-spacing: 0;
+
+  @extend %text;
+
+  &--2 {
+    @include cssLock("font-size", 360, $container, (16, 18));
+  }
+
+  &--3 {
+    @include cssLock("font-size", 360, $container, (15, 20));
+
+    line-height: 32px;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.small {
+  font-size: 13px;
+  line-height: 20px;
+}

@@ -1,0 +1,39 @@
+.button,
+.wp-block-file a,
+.wp-block-button__link {
+  @include cssLock("font-size", 360, $container, (14, 16));
+
+  color: $primary;
+  font-family: $font-main;
+  font-weight: $regular;
+  padding: gutter(1.5) gutter(4);
+  display: inline-block;
+  border: 1px solid $primary;
+  text-transform: uppercase;
+  border-radius: 0;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  @include media("<md") {
+    padding: gutter(0.9) gutter(2.5);
+  }
+
+  &:hover {
+    color: $white;
+    background-color: lighten($primary, 5);
+    text-decoration: none;
+  }
+
+  &--center {
+    text-align: center;
+    margin: auto;
+  }
+
+  &--info {
+    background-color: $info;
+
+    &:hover {
+      background-color: darken($info, 10);
+    }
+  }
+}

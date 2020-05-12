@@ -1,0 +1,86 @@
+.form {
+  $root: &;
+
+  text-align: left;
+  margin: gutter(5) auto 0;
+  max-width: gutter(70);
+  color: rgba($black-light, 0.8);
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: gutter(6);
+
+    @include media("<md") {
+      gap: gutter(3);
+    }
+  }
+
+  &__field {
+    margin: gutter(5) 0;
+
+    &--checkbox {
+      display: block;
+      position: relative;
+      padding-left: gutter(6);
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+  }
+
+  &__input {
+    background: none;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    border-bottom: 2px solid $primary;
+  }
+
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &-desc {
+      margin-top: -4px;
+      display: inline-block;
+    }
+
+    &:checked ~ #{$root}__check::after {
+      display: block;
+    }
+  }
+
+  &__check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: gutter(2.5);
+    width: gutter(2.5);
+    border: 2px solid $primary;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 7px;
+      top: 3px;
+      width: 8px;
+      height: 12px;
+      border: solid $primary;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__button {
+    margin-top: gutter(7);
+    text-align: center;
+  }
+}

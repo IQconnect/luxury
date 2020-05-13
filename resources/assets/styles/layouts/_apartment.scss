@@ -7,10 +7,22 @@
     display: grid;
     grid-template-columns: 45% auto;
     min-height: calc(100vh - 120px);
+
+    @include media("<lg") {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__content {
-    padding: gutter(7) gutter(12);
+    @include cssLock("padding-left", 600, 1920, (10, 120));
+    @include cssLock("padding-right", 600, 1920, (10, 120));
+
+    padding-top: gutter(10);
+    padding-bottom: gutter(10);
+
+    @include media("<lg") {
+      padding: gutter(5) gutter(2);
+    }
   }
 
   &__table {
@@ -33,6 +45,10 @@
   &__video {
     width: 100%;
 
+    @include media("<md") {
+      height: gutter(40);
+    }
+
     video {
       width: 100%;
       height: 100%;
@@ -42,16 +58,33 @@
 
   &__photos {
     padding: gutter(10) 0 gutter(2);
+
+    @include media("<lg") {
+      padding: gutter(4) 0;
+    }
+
+    @include media("<md") {
+      padding: gutter(2) 0;
+    }
   }
 
   &__header {
+    @include cssLock("font-size", 360, $container, (17, 24));
+
     display: block;
-    font-size: 24px;
     text-align: center;
     max-width: guter(50);
     padding: guttter(4);
     margin: gutter(4) 0 gutter(14);
     position: relative;
+
+    @include media("<md") {
+      margin-bottom: gutter(10);
+
+      br {
+        display: none;
+      }
+    }
 
     &::after {
       content: "";
@@ -68,8 +101,17 @@
 
   &__image {
     width: 100%;
-    height: gutter(50);
+    height: gutter(55);
     margin-bottom: gutter(4);
+
+    @include media("<lg") {
+      margin-bottom: gutter(2);
+      height: gutter(40);
+    }
+
+    @include media("<md") {
+      height: gutter(30);
+    }
 
     img {
       width: 100%;
@@ -84,9 +126,23 @@
     gap: gutter(4);
     padding: 0;
 
+    @include media("<xl") {
+      grid-template-columns: 1fr 1fr;
+      gap: gutter(2);
+    }
+
+    @include media("<md") {
+      grid-template-columns: 1fr;
+      gap: gutter(2);
+    }
+
     &-item {
       width: 100%;
       height: gutter(40);
+
+      @include media("<lg") {
+        height: gutter(30);
+      }
     }
 
     &-img {

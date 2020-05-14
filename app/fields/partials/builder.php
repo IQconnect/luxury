@@ -17,6 +17,7 @@ $builder
             ->addLayout(get_field_partial('components.text-img'))
             ->addLayout(get_field_partial('components.box-img'))
             ->addLayout(get_field_partial('components.apartments'))
+            ->addLayout(get_field_partial('components.apartments-page'))
             ->addLayout(get_field_partial('components.text'))
             ->addLayout(get_field_partial('components.icons'))
             ->addLayout(get_field_partial('components.page-title'))

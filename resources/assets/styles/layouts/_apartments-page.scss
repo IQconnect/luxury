@@ -1,0 +1,59 @@
+.apartments-page {
+  $root: &;
+
+  min-height: gutter(70);
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: gutter(5);
+
+    @include media("<lg") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__box {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+
+      #{$root}__img {
+        transform: scale(1.05);
+      }
+
+      #{$root}__content {
+        color: $primary;
+        margin-left: gutter(1.5);
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: gutter(50);
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition !important;
+  }
+
+  &__content {
+    @include cssLock("font-size", 360, $container, (30, 40));
+
+    transition: $transition;
+    display: block;
+    text-decoration: none;
+    color: $black;
+    padding: gutter(2) 0;
+    text-align: left;
+    margin: 0;
+  }
+}

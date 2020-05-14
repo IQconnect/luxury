@@ -4,16 +4,38 @@
 }
 
 .headline {
-  @include cssLock("font-size", 360, $container, (50, 90));
+  @include cssLock("font-size", 360, $container, (17, 24));
 
-  font-family: $font-title;
-  font-weight: $bold;
-  color: $white;
-  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  max-width: guter(50);
+  padding: guttter(4);
+  margin: gutter(4) 0 gutter(14);
+  position: relative;
+
+  @include media("<md") {
+    margin-bottom: gutter(10);
+
+    br {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: - gutter(3);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: gutter(30);
+    background-color: $primary;
+  }
 }
 
 .title {
-  @include cssLock("font-size", 360, $container, (25, 45));
+  @include cssLock("font-size", 360, $container, (30, 45));
 
   font-family: $font-title;
   font-weight: $regular;

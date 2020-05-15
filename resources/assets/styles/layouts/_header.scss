@@ -177,7 +177,8 @@
       }
 
       &.current-menu-item,
-      &.current-menu-ancestor {
+      &.current-menu-ancestor,
+      &.current-page-ancestor {
         position: relative;
         color: $primary;
 

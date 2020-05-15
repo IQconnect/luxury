@@ -8,6 +8,6 @@ $main = new FieldsBuilder('main');
 
 $main
     ->addTab('main', ['label'=>'Ustawienia stopki','placement' => 'left'])
-        ->addTrueFalse('show_map', ['label'=>'Wyświetl mape w stopce', 'default_value' => 0]);
+        ->addTrueFalse('show_form', ['label'=>'Wyświetl formularz', 'default_value' => 1]);
 
 return $main;

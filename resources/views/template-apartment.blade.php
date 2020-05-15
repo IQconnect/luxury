@@ -64,4 +64,5 @@
     </div>
   </section>
 </div>
+@include('components.form')
 @endsection

@@ -1,8 +1,6 @@
 .apartments-page {
   $root: &;
 
-  min-height: gutter(70);
-
   &__boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -12,6 +12,7 @@ $config = (object) [
 $contact = new FieldsBuilder('contact', ['label' => 'Kontakt']);
 
 $contact
-    ->addWysiwyg('content', ['label' => 'Opis', 'media_upload' => 0]);
+    ->addText('title', ['label' => 'Tytuł'])
+    ->addTextarea('desc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis']);
 
 return $contact;

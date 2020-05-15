@@ -45,7 +45,7 @@
   @extend %text;
 
   &--small {
-    @include cssLock("font-size", 360, $container, (22, 30));
+    @include cssLock("font-size", 360, $container, (22, 28));
 
     margin-bottom: gutter(1);
 

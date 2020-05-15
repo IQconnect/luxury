@@ -1,7 +1,10 @@
-<section class="section section--color">
+<section class="@if(!$contact) section section--color @endif">
+@if(!$contact)
   <div class="container">
+
     @include('blocks.section-info', ['title' => 'Formularz'])
-    <form class="form">
+@endif
+    <form class="form @if($contact) m-0 @endif">
       <div class="form__row">
         <div class="form__field">
           <label class="form__label">
@@ -29,11 +32,13 @@
         <input class="form__checkbox" type="checkbox" checked="checked">
         <span class="form__check"></span>
       </label>
-      <div class="form__button">
+      <div class="form__button @if($contact) text-left @endif">
         <a href="{{ $data['link']['url'] }}" class="button">
           Wyślij
         </a>
       </div>
     </form>
+@if(!$contact)
   </div>
+@endif
 </section>

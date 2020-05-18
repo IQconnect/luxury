@@ -2,7 +2,7 @@
 @if(!$contact)
   <div class="container">
 
-    @include('blocks.section-info', ['title' => 'Formularz'])
+    @include('blocks.block-info', ['title' => 'Formularz'])
 @endif
     <form class="form @if($contact) mb-0 mt-0 @endif">
       <div class="form__row">

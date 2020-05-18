@@ -1,6 +1,6 @@
 <section class="section">
   <div class="container">
-      @include('blocks.section-header', ['title' => $data['title'], 'desc' => $data['desc']])
+      @include('blocks.block-header', ['title' => $data['title'], 'desc' => $data['desc']])
     <div class="apartments">
       <div class="apartments__container">
         <div class="apartments__slider">

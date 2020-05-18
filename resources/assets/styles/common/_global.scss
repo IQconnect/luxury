@@ -16,15 +16,3 @@ p {
 strong {
   font-weight: $bold !important;
 }
-
-#caRatySideup {
-  display: none;
-  position: fixed;
-  top: 30%;
-  right: 0;
-  z-index: 1005;
-
-  @include media("<md") {
-    visibility: hidden;
-  }
-}

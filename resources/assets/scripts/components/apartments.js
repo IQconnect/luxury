@@ -69,7 +69,6 @@ const apartments = {
       index = this.apartments.selectedIndex+1;
       precent = 100/(count-1);
       precent = precent*(index-1);
-      //line.style.width = precent+'%';
 
       prevButton.classList.remove('apartments__button--disabled');
       nextButton.classList.remove('apartments__button--disabled');

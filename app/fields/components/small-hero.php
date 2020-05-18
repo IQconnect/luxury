@@ -12,7 +12,6 @@ $config = (object) [
 $smallHero = new FieldsBuilder('small-hero', ['label' => 'Small Hero']);
 
 $smallHero
-    ->addImage('image', ['label' => 'Tło'])
-    ->addText('title', ['label' => 'Tytuł']);
+    ->addImage('image', ['label' => 'Tło']);
 
 return $smallHero;

@@ -4,7 +4,7 @@
 
     @include('blocks.section-info', ['title' => 'Formularz'])
 @endif
-    <form class="form @if($contact) m-0 @endif">
+    <form class="form @if($contact) mb-0 mt-0 @endif">
       <div class="form__row">
         <div class="form__field">
           <label class="form__label">

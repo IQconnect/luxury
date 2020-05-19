@@ -15,6 +15,7 @@ import header from './components/header';
 import apartments from './components/apartments';
 import preloader from './components/preloader';
 import wp_block_gallery from './components/wp-block-gallery';
+import gmap from './components/gmap';
 
 
 /** Populate Router instance with DOM routes */
@@ -34,5 +35,6 @@ jQuery(document).ready(() => {
   preloader.init();
   hamburger.init();
   wp_block_gallery.init();
+  gmap.init();
   apartments.init();
 });

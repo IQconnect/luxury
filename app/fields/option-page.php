@@ -19,6 +19,12 @@ $option_page
         ->addText('email2', ['label' => 'Email firmowy 2'])
     ->addTab('Header', ['placement' => 'left'])
         ->addImage('logo')
+    ->addTab('Mapa', ['placement' => 'left'])
+        ->addRepeater('pins')
+            ->addImage('icon', ['label'=>'icon'])
+            ->addGoogleMap('pin')
+            ->addWysiwyg('tooltip')
+        ->endRepeater()
     ->addTab('Stopka', ['placement' => 'left'])
         ->addText('copyright')
         ->addImage('iqlogo', ['label' => 'Wykonanie']);

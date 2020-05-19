@@ -1,6 +1,11 @@
 @if(get_field('show_form'))
   @include('components.form')
 @endif
+@if(get_field('show_map'))
+  <section class="section section--color section--map">
+    @include('components.map')
+  </section>
+@endif
 <footer class="footer">
   <div class="footer__logo">
     <a href="{{ home_url('/') }}">

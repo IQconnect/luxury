@@ -2,9 +2,9 @@
     <div class="container">
       <div class="hero__content">
         <h1 class="m-0">
-          <span class="text text--3 hero__prefix">
+          {{-- <span class="text text--3 hero__prefix">
             {!! $data['prefix'] !!}
-          </span>
+          </span> --}}
           <span class="title hero__header text--white">
             {{ $data['header'] }}
           </span>

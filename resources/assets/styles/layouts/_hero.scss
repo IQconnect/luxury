@@ -69,6 +69,7 @@
     margin-top: 0;
     position: relative;
     display: block;
+    color: lighten($primary, 5);
   }
 
   &__prefix {

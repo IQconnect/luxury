@@ -24,6 +24,16 @@
     text-decoration: none;
   }
 
+  &--light {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
   &--center {
     text-align: center;
     margin: auto;

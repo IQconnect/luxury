@@ -17,7 +17,7 @@ $apartment
         ->addText('apartment-size', ['label' => 'Powierzchnia','wrapper' => ['width' => 33.33]])
         ->addWysiwyg('apartment-desc', ['label' => 'Opis apartamentu', 'media_upload' => 0])
     ->addTab('Filmik', ['placement' => 'left'])
-        ->addFile('apartment-video')
+        ->addText('apartment-video')
     ->addTab('Photos', ['label' => 'Zdjęcia','placement' => 'left'])
         ->addTextarea('apartment-header', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis'])
         ->addImage('apartment-img', ['label' => 'Duże zdjęcie'])

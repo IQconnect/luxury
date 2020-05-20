@@ -6,10 +6,6 @@
     position: relative;
     width: 100%;
     height: gutter(65);
-
-    @include media("<md") {
-      height: gutter(50);
-    }
   }
 
   &__photo {
@@ -19,16 +15,16 @@
     padding-left: gutter(15);
 
     @include media("<lg") {
-      padding: 0;
+      padding: 0 0 gutter(15);
     }
   }
 
   &__box {
     position: absolute;
     bottom: - gutter(8);
-    background-color: rgba($primary, 0.9);
-    width: gutter(60);
-    padding: gutter(6);
+    background-color: rgba($primary, 0.95);
+    width: gutter(70);
+    padding: gutter(5);
 
     @include media("<lg") {
       width: 100%;
@@ -39,5 +35,9 @@
 
   &__title {
     margin-bottom: gutter(3);
+  }
+
+  &__button {
+    margin-top: gutter(2);
   }
 }

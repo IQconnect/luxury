@@ -12,6 +12,11 @@
           <div class="text">
             {!! $data['content'] !!}
           </div>
+          @if($data['link'])
+            <a href="{{ $data['link']['url'] }}" class="button button--light box-img__button">
+              więcej
+            </a>
+          @endif
         </div>
       </div>
     </div>

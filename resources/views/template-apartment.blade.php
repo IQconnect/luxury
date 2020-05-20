@@ -15,7 +15,7 @@
       <div class="apartment__table">
         <div>
           <span class="small apartment__label">
-            Łóżko
+            Cennik
           </span>
           {{ get_field('apartment-type') }}
         </div>

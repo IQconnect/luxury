@@ -140,13 +140,12 @@
   }
 
   &__header {
-    @include cssLock("font-size", 360, $container, (17, 24));
+    @include cssLock("font-size", 360, $container, (17, 21));
 
     display: block;
     text-align: center;
-    max-width: guter(50);
-    padding: guttter(4);
-    margin: gutter(4) 0 gutter(14);
+    max-width: gutter(60);
+    margin: gutter(4) auto gutter(14);
     position: relative;
 
     @include media("<md") {

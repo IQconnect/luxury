@@ -7,6 +7,6 @@
   <p class="text text--3 block-info__desc">
     Potrzebujesz więcej informacji lub masz jakieś pytania?
     <br>
-    Wypełnij formularz lub zadzwoń pod numer: <a href="tel:{{ str_replace(' ','', get_option_field('phone')) }}">+48 123 123 123</a>
+    Wypełnij formularz lub zadzwoń pod numer: <a href="tel:{{ str_replace(' ','', get_option_field('phone')) }}">{{ get_option_field('phone') }}</a>
   </p>
 </div>

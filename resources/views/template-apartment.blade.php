@@ -45,7 +45,7 @@
   </section>
   <section class="container section--color">
     <div class="apartment__photos">
-      <p class="apartment__header">
+      <p class="apartment__header quote">
         {!! get_field('apartment-header') !!}
       </p>
       <div class="apartment__image">

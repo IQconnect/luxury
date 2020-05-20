@@ -14,10 +14,6 @@
     }
   }
 
-  &__desc {
-    @include cssLock("font-size", 360, $container, (15, 19));
-  }
-
   &__data {
     margin: gutter(6) 0;
 

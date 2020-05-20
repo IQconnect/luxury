@@ -27,6 +27,7 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: gutter(12);
+    max-width: gutter(130);
 
     @include media("<md") {
       margin: gutter(4) 0 0 0;

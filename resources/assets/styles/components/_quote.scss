@@ -1,0 +1,22 @@
+.quote {
+  position: relative;
+  padding-top: gutter(3);
+
+  &::before {
+    content: ",,";
+    color: $primary;
+    font-family: $font-title;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: - gutter(6);
+    transform: translateX(-50%);
+  }
+
+  &--left {
+    &::before {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}

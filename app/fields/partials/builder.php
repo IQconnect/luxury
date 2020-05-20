@@ -14,6 +14,7 @@ $builder
             ->addLayout(get_field_partial('components.box-img'))
             ->addLayout(get_field_partial('components.apartments'))
             ->addLayout(get_field_partial('components.apartments-page'))
-            ->addLayout(get_field_partial('components.contact'));
+            ->addLayout(get_field_partial('components.contact'))
+            ->addLayout('content', ['label' => 'Treść']);
 
 return $builder;

@@ -85,3 +85,25 @@
     justify-content: center;
   }
 }
+
+.wp-block-table {
+  margin-top: gutter(8);
+
+  table {
+    max-width: gutter(110);
+    margin: auto;
+  }
+
+  th {
+    color: $primary;
+    padding: gutter(1.5) gutter(0.5);
+  }
+
+  tr {
+    border-bottom: 1px solid $primary;
+  }
+
+  td {
+    padding: gutter(1.5) gutter(0.5);
+  }
+}

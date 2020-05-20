@@ -34,22 +34,22 @@
         </div>
         <ul class="text text--3 footer__nav">
           <li>
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="./apartamenty">
               Apartamenty
             </a>
           </li>
           <li>
-            <a class="footer__link" href="#">
-              Lokalizacja
+            <a class="footer__link" href="./atrakcje-turystyczne">
+              Atrakcje turystyczne
             </a>
           </li>
           <li>
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="./o-nas">
               O nas
             </a>
           </li>
           <li>
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="./kontakt">
               Kontakt
             </a>
           </li>

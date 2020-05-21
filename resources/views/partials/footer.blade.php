@@ -33,26 +33,13 @@
           </p>
         </div>
         <ul class="text text--3 footer__nav">
-          <li>
-            <a class="footer__link" href="./apartamenty">
-              Apartamenty
-            </a>
-          </li>
-          <li>
-            <a class="footer__link" href="./atrakcje-turystyczne">
-              Atrakcje turystyczne
-            </a>
-          </li>
-          <li>
-            <a class="footer__link" href="./o-nas">
-              O nas
-            </a>
-          </li>
-          <li>
-            <a class="footer__link" href="./kontakt">
-              Kontakt
-            </a>
-          </li>
+          @foreach(get_option_field("footer-nav") as $item)
+            <li>
+              <a class="footer__link" href="{{ $item['link']['url'] }}">
+                {{ $item['link']['title'] }}
+              </a>
+            </li>
+          @endforeach
         </ul>
       </div>
       <div class="footer__row footer__row--bottom">

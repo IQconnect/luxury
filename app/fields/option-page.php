@@ -14,9 +14,7 @@ $option_page
         ->addText('name', ['label' => 'Nazwa firmy'])
         ->addTextarea('address', ['label' => 'Adres firmy', 'rows' => '2', 'new_lines' => 'br'])
         ->addText('phone', ['label' => 'Telefon firmowy'])
-        ->addText('phone2', ['label' => 'Telefon firmowy 2'])
         ->addText('email', ['label' => 'Email firmowy'])
-        ->addText('email2', ['label' => 'Email firmowy 2'])
     ->addTab('Header', ['placement' => 'left'])
         ->addImage('logo')
     ->addTab('Mapa', ['placement' => 'left'])
@@ -27,6 +25,9 @@ $option_page
         ->endRepeater()
     ->addTab('Stopka', ['placement' => 'left'])
         ->addText('copyright')
-        ->addImage('iqlogo', ['label' => 'Wykonanie']);
+        ->addImage('iqlogo', ['label' => 'Wykonanie'])
+        ->addRepeater('footer-nav')
+            ->addLink('link');
+
 
 return $option_page;

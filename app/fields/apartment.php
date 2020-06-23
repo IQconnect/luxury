@@ -12,6 +12,7 @@ $apartment
 $apartment
     ->addTab('Opis', ['placement' => 'left'])
         ->addText('apartment-title', ['label' => 'Tytuł apartamentu'])
+        ->addLink('reservation', ['label' => 'Rezerwacja'])
         ->addText('apartment-type', ['label' => 'Typ', 'wrapper' => ['width' => 33.33]])
         ->addText('apartment-location', ['label' => 'Lokalizacja','wrapper' => ['width' => 33.33]])
         ->addText('apartment-size', ['label' => 'Powierzchnia','wrapper' => ['width' => 33.33]])

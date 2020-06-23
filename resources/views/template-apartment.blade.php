@@ -9,9 +9,16 @@
 <div class="apartment">
   <section class="apartment__hero">
     <div class="apartment__content">
-      <h2 class="title primary">
-        {{ get_field('apartment-title') }}
-      </h2>
+      <div class="apartment__title">
+        <h2 class="title primary mb-3">
+          {{ get_field('apartment-title') }}
+        </h2>
+        @if(get_field('reservation'))
+          <a href="{{ get_field('reservation')['url'] }}" class="button apartment__button mb-3">
+            Rezerwacja
+          </a>
+        @endif
+      </div>
       <div class="apartment__table">
         <div>
           <span class="small apartment__label">

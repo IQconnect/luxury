@@ -58,6 +58,16 @@
     border-bottom: 1px solid $primary;
   }
 
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    margin-top: gutter(0.5);
+  }
+
   &__label {
     display: block;
     color: lighten($black, 40);
